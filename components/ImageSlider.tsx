@@ -4,9 +4,10 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const slides = [
-  { image: "/images/projects/3d1-living-room-kitchen.jpg", title: "Hâbitat All Suite Hotel", projectLink: "#" },
-  { image: "/images/projects/7-scaled.jpg", title: "Modern Villa", projectLink: "/projects" },
   { image: "/images/projects/cam2-no-light.jpg", title: "Nicosia Office View", projectLink: "/projects" },
+  { image: "/images/projects/7-scaled.jpg", title: "Modern Villa", projectLink: "/projects" },
+    { image: "/images/projects/3d1-living-room-kitchen.jpg", title: "Hâbitat All Suite Hotel", projectLink: "#" },
+
   { image: "/images/projects/9-1.jpg", title: "Luxury Apartment", projectLink: "/projects" },
   { image: "/images/projects/c1-B.jpg", title: "Interior Concept", projectLink: "/projects" },
 ];

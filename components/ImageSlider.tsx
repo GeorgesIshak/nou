@@ -35,9 +35,9 @@ export default function ImageSlider() {
             <Image src={slide.image} alt={slide.title} fill className="object-cover" />
             <div className="absolute top-0 left-0 w-full h-full bg-black/30"></div>
 
-            <div className="absolute bottom-80 left-32 z-10 text-white flex flex-col">
+<div className="absolute bottom-100 md:bottom-80 left-7 md:left-16 z-10 text-white flex flex-col">
               <a href={slide.projectLink} className="cursor-pointer group inline-flex items-center gap-2 mt-2 cursor typewriter-animation">
-                <h2 className="text-4xl md:text-5xl font-medium transition-transform duration-500 group-hover:translate-y-[-3px] fade-in">{slide.title}</h2>
+                <h2 className="text-3xl md:text-5xl font-medium transition-transform duration-500 group-hover:translate-y-[-3px] fade-in">{slide.title}</h2>
                 <span className="block bg-white h-1 mt-2 w-12 transition-all duration-500 group-hover:w-6"></span>
               </a>
 
@@ -50,7 +50,7 @@ export default function ImageSlider() {
         ))}
       </div>
 
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex gap-6 z-10">
+      <div className="absolute bottom-22 md:bottom-10 left-1/2 transform -translate-x-1/2 flex gap-6 z-10">
         <button onClick={prevSlide} className="text-white text-3xl cursor-pointer">&#10094;</button>
         <button onClick={nextSlide} className="text-white text-3xl cursor-pointer">&#10095;</button>
       </div>

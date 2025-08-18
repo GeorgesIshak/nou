@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const slides = [
-  { image: "/images/projects/3d1-living-room-kitchen.jpg", title: "Hâbitat All Suite Hotel", projectLink: "https://www.gnb-architects.com/projects/habitat-all-suite-hotel/" },
+  { image: "/images/projects/3d1-living-room-kitchen.jpg", title: "Hâbitat All Suite Hotel", projectLink: "#" },
   { image: "/images/projects/7-scaled.jpg", title: "Modern Villa", projectLink: "/projects" },
   { image: "/images/projects/nicosia-view-6-f-md2-op2.jpg", title: "Nicosia Office View", projectLink: "/projects" },
   { image: "/images/projects/ydlmkcjn_v04.jpg", title: "Luxury Apartment", projectLink: "/projects" },

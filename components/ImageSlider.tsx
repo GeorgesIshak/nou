@@ -35,12 +35,12 @@ export default function ImageSlider() {
             <div className="absolute top-0 left-0 w-full h-full bg-black/30"></div>
 
             <div className="absolute bottom-80 left-32 z-10 text-white flex flex-col">
-              <a href={slide.projectLink} className="cursor-pointer group inline-flex items-center gap-2 mt-2">
+              <a href={slide.projectLink} className="cursor-pointer group inline-flex items-center gap-2 mt-2 cursor typewriter-animation">
                 <h2 className="text-4xl md:text-5xl font-medium transition-transform duration-500 group-hover:translate-y-[-3px] fade-in">{slide.title}</h2>
                 <span className="block bg-white h-1 mt-2 w-12 transition-all duration-500 group-hover:w-6"></span>
               </a>
 
-              <a href="/projects" className="group inline-flex items-center gap-2 mt-2 cursor-pointer">
+              <a href="/projects" className="group inline-flex items-center gap-2 mt-2 cursor-pointer cursor typewriter-animation">
                 <span className="block bg-white h-0.5 w-24 transition-all duration-500 group-hover:w-12"></span>
                 <h3 className="text-lg md:text-xl font-medium transition-transform duration-500 group-hover:translate-x-2 fade-in">All Projects</h3>
               </a>

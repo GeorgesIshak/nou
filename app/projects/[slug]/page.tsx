@@ -1,17 +1,18 @@
+// app/projects/[slug]/page.tsx
 import { projects } from "@/data/projects";
 import SliderProjects from "@/components/SliderProjects";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
-interface ProjectPageProps {
+// No need for ProjectPageProps interface
+export default async function ProjectPage({
+  params,
+}: {
   params: { slug: string };
-}
-
-export default async function ProjectPage({ params }: ProjectPageProps) {
+}) {
   const project = projects.find((p) => p.slug === params.slug);
 
-  if (!project) {
-    return <div className="text-center py-20 text-white">Project not found</div>;
-  }
+  if (!project) return notFound(); // Use Next.js 15 notFound for missing project
 
   return (
     <div className="min-h-screen bg-dark-bg text-white">
@@ -46,7 +47,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
       {/* Description */}
       <div className="mx-auto py-12 px-6 text-justify">
-        <p className="text-lg text-gray-300 leading-relaxed glow-text">{project.description}</p>
+        <p className="text-lg text-gray-300 leading-relaxed glow-text">
+          {project.description}
+        </p>
       </div>
 
       {/* Slider */}

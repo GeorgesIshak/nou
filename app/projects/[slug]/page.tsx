@@ -4,13 +4,15 @@ import SliderProjects from "@/components/SliderProjects";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-// No "use client" here — page is a server component
 export default async function ProjectPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const project = projects.find((p) => p.slug === params.slug);
+  // Await params to unwrap the promise
+  const { slug } = await params;
+
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) return notFound(); // Next.js way to handle missing pages
 

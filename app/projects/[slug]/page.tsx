@@ -4,7 +4,7 @@ import SliderProjects from "@/components/SliderProjects";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-// No need for ProjectPageProps interface
+// No "use client" here — page is a server component
 export default async function ProjectPage({
   params,
 }: {
@@ -12,7 +12,7 @@ export default async function ProjectPage({
 }) {
   const project = projects.find((p) => p.slug === params.slug);
 
-  if (!project) return notFound(); // Use Next.js 15 notFound for missing project
+  if (!project) return notFound(); // Next.js way to handle missing pages
 
   return (
     <div className="min-h-screen bg-dark-bg text-white">
@@ -27,15 +27,12 @@ export default async function ProjectPage({
 
         {/* Text Overlay */}
         <div className="absolute bottom-26 md:bottom-12 left-0 z-10 text-white flex flex-col w-full px-6 md:px-16">
-          {/* Project Title */}
           <div className="cursor-pointer group inline-flex items-center gap-2 mt-2 project-title">
             <h2 className="text-[26px] md:text-4xl font-medium transition-transform duration-500 group-hover:translate-y-[-3px]">
               {project.title}
             </h2>
             <span className="block bg-white h-1 mt-2 w-12 transition-all duration-500 group-hover:w-6"></span>
           </div>
-
-          {/* Project Location */}
           <div className="group inline-flex items-center gap-2 mt-2 cursor-pointer all-projects-link">
             <span className="block bg-white h-0.5 w-24 transition-all duration-500 group-hover:w-12"></span>
             <h3 className="text-lg md:text-xl font-medium transition-transform duration-500 group-hover:translate-x-2">

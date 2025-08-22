@@ -1,10 +1,7 @@
-import "./globals.css";
-import Header from "@/components/Header";
 
-export const metadata = {
-  title: "Nou Architecture",
-  description: "Portfolio of our projects",
-};
+import "./globals.css";
+
+
 
 export default function RootLayout({
   children,
@@ -14,8 +11,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-dmSans antialiased bg-white text-white">
-        <Header />
+       
         <main>{children}</main>
+       
       </body>
     </html>
   );

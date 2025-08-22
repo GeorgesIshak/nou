@@ -1,16 +1,21 @@
 "use client";
 
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+
 export default function ContactPage() {
   return (
-    <div className="min-h-screen px-8 py-16 md:px-20 bg-[#000319]">
+    <>
+    <Header/>
+    <div className="min-h-screen px-8 py-16 md:px-20">
       {/* Grid: Title + Address + Contact Info + Social Media */}
       <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-12 items-start mt-24 md:mt-40">
         {/* Get In Touch (wider column) */}
         <div className="flex flex-col gap-4 md:col-span-2">
-          <h2 className="text-5xl font-bold mb-4 text-white tracking-tight">
+          <h2 className="text-4xl font-bold mb-4 text-[#2b2929] tracking-tight">
             Get In Touch
           </h2>
-          <p className="text-white text-lg md:text-xl leading-relaxed text-justify">
+          <p className="text-[#2b2929] text-lg md:text-xl leading-relaxed text-justify">
             {`We'd love to hear from you! Whether you have questions, need
   support, or want to learn more about our services, our team is here
   to help.`}
@@ -20,7 +25,7 @@ export default function ContactPage() {
         {/* Our Address */}
         <div className="flex flex-col gap-4 md:col-span-1">
           <div className="grid items-start gap-4">
-            <div className="bg-white/10 p-4 rounded-xl flex w-18 items-center justify-center transition-transform transform hover:scale-110">
+            <div className="text-[#2b2929]/10 bg-[#2b2929] p-4 rounded-xl flex w-18 items-center justify-center transition-transform transform hover:scale-110">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="white"
@@ -32,11 +37,11 @@ export default function ContactPage() {
               </svg>
             </div>
             <div>
-              <h3 className="text-white font-semibold text-lg mb-1">
+              <h3 className="text-[#2b2929] font-semibold text-lg mb-1">
                 Our Address
               </h3>
-              <p className="text-white text-base">Nicosia Tower</p>
-              <p className="text-white text-base">Cyprus Street 12</p>
+              <p className="text-[#2b2929] text-base">Nicosia Tower</p>
+              <p className="text-[#2b2929] text-base">Cyprus Street 12</p>
             </div>
           </div>
         </div>
@@ -44,7 +49,7 @@ export default function ContactPage() {
         {/* Contact Info */}
         <div className="flex flex-col gap-4 md:col-span-1">
           <div className="grid items-start gap-4">
-            <div className="bg-white/10 p-4 rounded-xl w-18 flex items-center justify-center transition-transform transform hover:scale-110">
+            <div className="p-4 bg-[#2b2929] rounded-xl w-18 flex items-center justify-center transition-transform transform hover:scale-110">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="white"
@@ -56,11 +61,11 @@ export default function ContactPage() {
               </svg>
             </div>
             <div>
-              <h3 className="text-white font-semibold text-lg mb-1">
+              <h3 className="text-[#2b2929] font-semibold text-lg mb-1">
                 Contact Info
               </h3>
-              <p className="text-white text-base">+357 22 123 456</p>
-              <p className="text-white text-base">help@nightingale.com</p>
+              <p className="text-[#2b2929] text-base">+357 22 123 456</p>
+              <p className="text-[#2b2929] text-base">help@nightingale.com</p>
             </div>
           </div>
         </div>
@@ -68,7 +73,7 @@ export default function ContactPage() {
         {/* Social Media */}
         <div className="flex flex-col gap-4 md:col-span-1">
           <div className="grid items-start gap-4">
-            <div className="bg-white/10 p-4 rounded-xl w-18 flex items-center justify-center transition-transform transform hover:scale-110">
+            <div className=" p-4 bg-[#2b2929] rounded-xl w-18 flex items-center justify-center transition-transform transform hover:scale-110">
               {/* Meta Icon */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,11 +86,11 @@ export default function ContactPage() {
               </svg>
             </div>
             <div>
-              <h3 className="text-white font-semibold text-lg mb-1">
+              <h3 className="text-[#2b2929] font-semibold text-lg mb-1">
                 Social Media
               </h3>
-              <p className="text-white text-base">Instagram</p>
-              <p className="text-white text-base">Facebook</p>
+              <p className="text-[#2b2929] text-base">Instagram</p>
+              <p className="text-[#2b2929] text-base">Facebook</p>
             </div>
           </div>
         </div>
@@ -104,5 +109,8 @@ export default function ContactPage() {
         ></iframe>
       </div>
     </div>
+    
+    <Footer/>
+    </>
   );
 }

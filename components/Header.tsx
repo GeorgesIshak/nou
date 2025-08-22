@@ -3,13 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function Header() {
+interface HeaderProps {
+  transparent?: boolean;
+}
+
+export default function Header({ transparent = false }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [projectsOpen, setProjectsOpen] = useState(false);
 
   const menuItems = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
+   
     {
       name: "Projects",
       href: "/projects",
@@ -20,19 +24,30 @@ export default function Header() {
         { name: "Landscape", href: "/projects/landscape" },
       ],
     },
+     { name: "About Us", href: "/about" },
     { name: "Contact Us", href: "/contact" },
   ];
 
   return (
-    <header className="absolute top-0 left-0 w-full z-50 bg-transparent p-6">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+    <header
+      className={`fixed md:absolute top-0 left-0 w-full z-50 p-4 md:p-6 transition-colors duration-300 ${
+        transparent ? "bg-transparent" : "bg-[#2b2929]"
+      }`}
+    >
+      <div className="mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Image
-          src="/images/projects/nou.svg"
-          alt="Nou Architecture"
-          width={160}
-          height={30}
-        />
+        <Link
+          href="/"
+          className="relative w-[120px] h-[60px] md:w-[160px] md:h-[70px] block"
+        >
+          <Image
+            src="/images/projects/nou.svg"
+            alt="Nou Architecture"
+            fill
+            style={{ objectFit: "contain" }}
+            priority
+          />
+        </Link>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex">
@@ -40,16 +55,17 @@ export default function Header() {
             {menuItems.map((item) => (
               <li key={item.name} className="relative group">
                 <Link href={item.href}>{item.name}</Link>
-
                 {item.submenu && (
-                  <ul className="absolute top-full left-0 mt-2 w-48 bg-white text-black shadow-lg rounded opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
+                  <ul className="absolute top-full left-0 mt-2 w-40 bg-white text-black shadow-lg rounded opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
                     {item.submenu.map((sub) => (
                       <li key={sub.name} className="border-b last:border-b-0">
                         <Link
                           href={sub.href}
-                          className="block px-4 py-3 hover:bg-gray-100"
+                          className="block px-2 py-2 hover:bg-gray-100"
                         >
                           {sub.name}
+
+                          
                         </Link>
                       </li>
                     ))}
@@ -90,7 +106,7 @@ export default function Header() {
         }`}
       >
         {/* X Button */}
-        <div className="absolute top-18 right-6 z-50">
+        <div className="absolute top-10 right-4 z-50">
           <button
             className="flex flex-col justify-center items-center gap-1"
             onClick={() => setIsOpen(false)}
@@ -108,7 +124,9 @@ export default function Header() {
                 <Link
                   href={item.href}
                   onClick={() =>
-                    !item.submenu ? setIsOpen(false) : setProjectsOpen(!projectsOpen)
+                    !item.submenu
+                      ? setIsOpen(false)
+                      : setProjectsOpen(!projectsOpen)
                   }
                   className="block py-6 transition-all duration-500"
                   style={{
@@ -132,19 +150,25 @@ export default function Header() {
               {/* Mobile Submenu */}
               {item.submenu && (
                 <ul
-                  className={`pl-4 pb-4 overflow-hidden transition-all duration-500 ease-in-out`}
+                  className="pl-4 pb-4 overflow-hidden transition-all duration-500 ease-in-out"
                   style={{
-                    maxHeight: projectsOpen ? `${item.submenu.length * 48}px` : "0",
+                    maxHeight: projectsOpen
+                      ? `${item.submenu.length * 48}px`
+                      : "0",
                   }}
                 >
                   {item.submenu.map((sub, subIndex) => (
                     <li
                       key={sub.name}
-                      className={`transition-all duration-500 ease-out`}
+                      className="transition-all duration-500 ease-out"
                       style={{
-                        transitionDelay: `${projectsOpen ? subIndex * 100 : 0}ms`,
+                        transitionDelay: `${
+                          projectsOpen ? subIndex * 100 : 0
+                        }ms`,
                         opacity: projectsOpen ? 1 : 0,
-                        transform: projectsOpen ? "translateY(0)" : "translateY(-10px)",
+                        transform: projectsOpen
+                          ? "translateY(0)"
+                          : "translateY(-10px)",
                       }}
                     >
                       <Link

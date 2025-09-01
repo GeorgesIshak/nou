@@ -30,7 +30,7 @@ export default function Header({ transparent = false }: HeaderProps) {
 
   return (
     <header
-      className={`fixed md:absolute top-0 left-0 w-full z-50 p-4 md:p-6 transition-colors duration-300 ${
+      className={`fixed md:absolute top-0 left-0 w-full z-50 p-4 md:p-4 transition-colors duration-300 ${
         transparent ? "bg-transparent" : "bg-[#2b2929]"
       }`}
     >
@@ -38,7 +38,7 @@ export default function Header({ transparent = false }: HeaderProps) {
         {/* Logo */}
         <Link
           href="/"
-          className="relative w-[120px] h-[60px] md:w-[160px] md:h-[70px] block"
+          className="relative w-[120px] h-[60px] md:w-[160px] md:h-[60px] block"
         >
           <Image
             src="/images/projects/nou.svg"
@@ -61,7 +61,7 @@ export default function Header({ transparent = false }: HeaderProps) {
                       <li key={sub.name} className="border-b last:border-b-0">
                         <Link
                           href={sub.href}
-                          className="block px-2 py-2 hover:bg-gray-100"
+                          className="block px-2 py-2 text-sm hover:bg-gray-100"
                         >
                           {sub.name}
 

@@ -6,7 +6,7 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #fff;
 }
-
+/* 
 .cursor {
   white-space: nowrap;
   overflow: hidden;
@@ -16,8 +16,8 @@ body {
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   animation: typewriter 2s steps(30) 0.5s 1 normal both,
   blinkCursorOnce 2s steps(30) 1 forwards;
-}
-
+} */
+/* 
 @keyframes typewriter {
   from {
     width: 0;
@@ -25,8 +25,8 @@ body {
   to {
     width: 100%;
   }
-}
-
+} */
+/* 
 @keyframes blinkCursorOnce {
   0%,
   90% {
@@ -35,30 +35,30 @@ body {
   100% {
     border-right-color: transparent;
   }
-}
+} */
 
 /* Container for the animated text */
-.text-animate-container {
+/* .text-animate-container {
   overflow: hidden;
-}
+} */
 
 /* Project title: slide from top */
-.project-title {
+/* .project-title {
   transform: translateY(-100px);
   opacity: 0;
   animation: slideFromTop 2s ease-out forwards;
   animation-delay: 0.3s;
-}
+} */
 
 /* All Projects link: slide from right */
-.all-projects-link {
+/* .all-projects-link {
   transform: translateX(100vw);
   opacity: 0;
   animation: slideFromRight 2s ease-out forwards;
   animation-delay: 0.5s;
-}
+} */
 
-/* Keyframes */
+/* Keyframes
 @keyframes slideFromTop {
   from {
     transform: translateY(-100px);
@@ -79,10 +79,10 @@ body {
     transform: translateX(0);
     opacity: 1;
   }
-}
+} */
 
 /* Hero zoom out */
-@keyframes zoomOut {
+/* @keyframes zoomOut {
   from {
     transform: scale(1.1);
   }
@@ -92,55 +92,14 @@ body {
 }
 .animate-zoomOut {
   animation: zoomOut 10s ease forwards;
-}
+} */
 
-@keyframes lights {
-  0% {
-    color: hsl(230, 40%, 80%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
-
-  30% {
-    color: hsl(230, 80%, 90%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-
-  40% {
-    color: hsl(230, 100%, 95%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 90%, 0.5),
-      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
-      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
-  }
-
-  70% {
-    color: hsl(230, 80%, 90%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-
-  100% {
-    color: hsl(230, 40%, 80%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
-}
 
 p {
   margin: auto;
   color:#2b2929;
   font-weight: 300;
-  animation: lights 2.5s 750ms linear;
+
 }
 
 /* Slider animations */
@@ -164,4 +123,31 @@ p {
   background: white;
   color: black;
   transform: scale(1.2);
+}
+
+
+/*Global Font*/
+
+
+
+
+/* Default paragraph text */
+p {
+  font-size: 16px;
+  color: #2b2929;
+  line-height: 1.5;
+}
+
+/* Phone numbers / email */
+p.phone {
+  font-size: 14px;
+  color: #2b2929;
+}
+
+/* Social Media headings */
+h6 {
+  font-size: 14px;
+  font-weight: 400; 
+  color: #2b2929;
+  line-height: 1.4;
 }

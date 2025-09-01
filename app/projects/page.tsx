@@ -51,7 +51,7 @@ export default function ProjectsPage() {
             "
               >
                 <div className="flex flex-col">
-                  <h3 className="text-white font-semibold text-[1.6em] sm:text-[2em] m-0 p-0 transition-transform duration-600 ease-in-out">
+                  <h3 className="text-white font-medium text-[1.4em] sm:text-[1.7em] m-0 p-0 transition-transform duration-600 ease-in-out">
                     {project.title}
                   </h3>
 
@@ -67,7 +67,7 @@ export default function ProjectsPage() {
                   <span className="bg-white block h-[2px] w-[30px] sm:h-[3px] sm:w-[45px] md:w-0 md:group-hover:w-[45px] transition-all duration-600 ease-in-out"></span>
                   <Link
                     href={`/projects/${project.slug}`}
-                    className="text-white font-normal sm:font-semibold text-[1.1em] sm:text-[1.2em] ml-2 transition-transform duration-600 ease-in-out"
+                    className="text-white font-normal sm:font-medium text-[1em] sm:text-[1.1em] ml-2 transition-transform duration-600 ease-in-out"
                   >
                     View more
                   </Link>

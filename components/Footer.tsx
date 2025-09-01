@@ -12,7 +12,7 @@ export default function Footer() {
           height={30}
         />
         <h5 className="text-sm leading-relaxed">
-          We believe architecture is more than structures,. With every project,
+          We believe architecture is more than structures. With every project,
           we blend creativity, precision, and purpose to bring visions to life
           through thoughtful design. We are a team of architects, designers, and
           developers who are passionate about creating beautiful and functional
@@ -32,6 +32,9 @@ export default function Footer() {
           </li>
           <li>
             <Link href="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact Us</Link>
           </li>
         </ul>
 

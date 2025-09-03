@@ -5,12 +5,15 @@ export const projects = [
     location: "Athens, Greece",
     description: `This creative interior design project emphasizes innovation and unique spatial experiences. Each room is carefully curated with bespoke furniture, lighting solutions, and decorative elements. The concept blends modern design with comfort, ensuring functional yet aesthetically pleasing environments. Color schemes and textures are thoughtfully chosen to create dynamic visual interest, while prioritizing user experience and practicality.`,
     mainImage: "/images/projects/3d1-living-room-kitchen.jpg",
-      images: [
+    images: [
       "/images/projects/3d1-living-room-kitchen.jpg",
       "/images/projects/c1-B.jpg",
       "/images/projects/9-1.jpg",
       "/images/projects/cam2-no-light.jpg",
     ],
+    type: "Hotel",
+    status: "Completed",
+    size: "500 m²",
   },
   {
     slug: "modern-villa",
@@ -18,13 +21,15 @@ export const projects = [
     location: "Rome, Italy",
     description: `This creative interior design project emphasizes innovation and unique spatial experiences. Each room is carefully curated with bespoke furniture, lighting solutions, and decorative elements. The concept blends modern design with comfort, ensuring functional yet aesthetically pleasing environments. Color schemes and textures are thoughtfully chosen to create dynamic visual interest, while prioritizing user experience and practicality.`,
     mainImage: "/images/projects/7-scaled.jpg",
- 
-      images: [
+    images: [
       "/images/projects/3d1-living-room-kitchen.jpg",
       "/images/projects/c1-B.jpg",
       "/images/projects/9-1.jpg",
       "/images/projects/cam2-no-light.jpg",
     ],
+    type: "Villa",
+    status: "Ongoing",
+    size: "350 m²",
   },
   {
     slug: "nicosia-office-view",
@@ -32,12 +37,15 @@ export const projects = [
     location: "Nicosia, Cyprus",
     description: `This creative interior design project emphasizes innovation and unique spatial experiences. Each room is carefully curated with bespoke furniture, lighting solutions, and decorative elements. The concept blends modern design with comfort, ensuring functional yet aesthetically pleasing environments. Color schemes and textures are thoughtfully chosen to create dynamic visual interest, while prioritizing user experience and practicality.`,
     mainImage: "/images/projects/cam2-no-light.jpg",
-      images: [
+    images: [
       "/images/projects/3d1-living-room-kitchen.jpg",
       "/images/projects/c1-B.jpg",
       "/images/projects/9-1.jpg",
       "/images/projects/cam2-no-light.jpg",
     ],
+    type: "Office",
+    status: "Completed",
+    size: "400 m²",
   },
   {
     slug: "luxury-apartment",
@@ -45,13 +53,15 @@ export const projects = [
     location: "Santorini, Greece",
     description: `This creative interior design project emphasizes innovation and unique spatial experiences. Each room is carefully curated with bespoke furniture, lighting solutions, and decorative elements. The concept blends modern design with comfort, ensuring functional yet aesthetically pleasing environments. Color schemes and textures are thoughtfully chosen to create dynamic visual interest, while prioritizing user experience and practicality.`,
     mainImage: "/images/projects/9-1.jpg",
-  
-      images: [
+    images: [
       "/images/projects/3d1-living-room-kitchen.jpg",
       "/images/projects/c1-B.jpg",
       "/images/projects/9-1.jpg",
       "/images/projects/cam2-no-light.jpg",
     ],
+    type: "Apartment",
+    status: "Planned",
+    size: "200 m²",
   },
   {
     slug: "interior-concept",
@@ -59,13 +69,15 @@ export const projects = [
     location: "Mykonos, Greece",
     description: `This creative interior design project emphasizes innovation and unique spatial experiences. Each room is carefully curated with bespoke furniture, lighting solutions, and decorative elements. The concept blends modern design with comfort, ensuring functional yet aesthetically pleasing environments. Color schemes and textures are thoughtfully chosen to create dynamic visual interest, while prioritizing user experience and practicality.`,
     mainImage: "/images/projects/c1-B.jpg",
-  
-      images: [
+    images: [
       "/images/projects/3d1-living-room-kitchen.jpg",
       "/images/projects/c1-B.jpg",
       "/images/projects/9-1.jpg",
       "/images/projects/cam2-no-light.jpg",
     ],
+    type: "Concept",
+    status: "Ongoing",
+    size: "300 m²",
   },
   {
     slug: "c1",
@@ -73,12 +85,15 @@ export const projects = [
     location: "Venice, Italy",
     description: `This creative interior design project emphasizes innovation and unique spatial experiences. Each room is carefully curated with bespoke furniture, lighting solutions, and decorative elements. The concept blends modern design with comfort, ensuring functional yet aesthetically pleasing environments. Color schemes and textures are thoughtfully chosen to create dynamic visual interest, while prioritizing user experience and practicality.`,
     mainImage: "/images/projects/c1.jpg",
-      images: [
+    images: [
       "/images/projects/3d1-living-room-kitchen.jpg",
       "/images/projects/c1-B.jpg",
       "/images/projects/9-1.jpg",
       "/images/projects/cam2-no-light.jpg",
     ],
+    type: "Villa",
+    status: "Completed",
+    size: "450 m²",
   },
   {
     slug: "c2",
@@ -86,12 +101,15 @@ export const projects = [
     location: "Limassol, Cyprus",
     description: `This creative interior design project emphasizes innovation and unique spatial experiences. Each room is carefully curated with bespoke furniture, lighting solutions, and decorative elements. The concept blends modern design with comfort, ensuring functional yet aesthetically pleasing environments. Color schemes and textures are thoughtfully chosen to create dynamic visual interest, while prioritizing user experience and practicality.`,
     mainImage: "/images/projects/c2.jpg",
-      images: [
+    images: [
       "/images/projects/3d1-living-room-kitchen.jpg",
       "/images/projects/c1-B.jpg",
       "/images/projects/9-1.jpg",
       "/images/projects/cam2-no-light.jpg",
     ],
+    type: "Office",
+    status: "Ongoing",
+    size: "380 m²",
   },
   {
     slug: "c3-2",
@@ -99,12 +117,15 @@ export const projects = [
     location: "Naples, Italy",
     description: `This creative interior design project emphasizes innovation and unique spatial experiences. Each room is carefully curated with bespoke furniture, lighting solutions, and decorative elements. The concept blends modern design with comfort, ensuring functional yet aesthetically pleasing environments. Color schemes and textures are thoughtfully chosen to create dynamic visual interest, while prioritizing user experience and practicality.`,
     mainImage: "/images/projects/c3-2.jpg",
-      images: [
+    images: [
       "/images/projects/3d1-living-room-kitchen.jpg",
       "/images/projects/c1-B.jpg",
       "/images/projects/9-1.jpg",
       "/images/projects/cam2-no-light.jpg",
     ],
+    type: "Apartment",
+    status: "Planned",
+    size: "320 m²",
   },
   {
     slug: "c4",
@@ -112,12 +133,15 @@ export const projects = [
     location: "Corfu, Greece",
     description: `This creative interior design project emphasizes innovation and unique spatial experiences. Each room is carefully curated with bespoke furniture, lighting solutions, and decorative elements. The concept blends modern design with comfort, ensuring functional yet aesthetically pleasing environments. Color schemes and textures are thoughtfully chosen to create dynamic visual interest, while prioritizing user experience and practicality.`,
     mainImage: "/images/projects/c4.jpg",
-      images: [
+    images: [
       "/images/projects/3d1-living-room-kitchen.jpg",
       "/images/projects/c1-B.jpg",
       "/images/projects/9-1.jpg",
       "/images/projects/cam2-no-light.jpg",
     ],
+    type: "Hotel",
+    status: "Completed",
+    size: "410 m²",
   },
   {
     slug: "cam06",
@@ -125,12 +149,15 @@ export const projects = [
     location: "Athens, Greece",
     description: `This creative interior design project emphasizes innovation and unique spatial experiences. Each room is carefully curated with bespoke furniture, lighting solutions, and decorative elements. The concept blends modern design with comfort, ensuring functional yet aesthetically pleasing environments. Color schemes and textures are thoughtfully chosen to create dynamic visual interest, while prioritizing user experience and practicality.`,
     mainImage: "/images/projects/cam06.jpg",
-      images: [
+    images: [
       "/images/projects/3d1-living-room-kitchen.jpg",
       "/images/projects/c1-B.jpg",
       "/images/projects/9-1.jpg",
       "/images/projects/cam2-no-light.jpg",
     ],
+    type: "Concept",
+    status: "Ongoing",
+    size: "290 m²",
   },
   {
     slug: "cam014",
@@ -138,11 +165,14 @@ export const projects = [
     location: "Rome, Italy",
     description: `This creative interior design project emphasizes innovation and unique spatial experiences. Each room is carefully curated with bespoke furniture, lighting solutions, and decorative elements. The concept blends modern design with comfort, ensuring functional yet aesthetically pleasing environments. Color schemes and textures are thoughtfully chosen to create dynamic visual interest, while prioritizing user experience and practicality.`,
     mainImage: "/images/projects/cam014.jpg",
-      images: [
+    images: [
       "/images/projects/3d1-living-room-kitchen.jpg",
       "/images/projects/c1-B.jpg",
       "/images/projects/9-1.jpg",
       "/images/projects/cam2-no-light.jpg",
     ],
+    type: "Office",
+    status: "Completed",
+    size: "360 m²",
   },
 ];

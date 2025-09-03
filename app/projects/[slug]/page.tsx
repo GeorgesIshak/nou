@@ -1,7 +1,6 @@
 // app/projects/[slug]/page.tsx
 import { projects } from "@/data/projects";
 import SliderProjects from "@/components/SliderProjects";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 
@@ -16,45 +15,56 @@ export default async function ProjectPage({
 
   if (!project) return notFound();
 
-
   return (
     <>
-    <Header/>
-    <div className="min-h-screen bg-dark-bg text-white">
-      <div className="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
-        <Image
-          src={project.mainImage}
-          alt={project.title}
-          fill
-          className="absolute inset-0 w-full h-full object-cover opacity-60 animate-zoomOut"
-        />
-
-        <div className="absolute bottom-26 md:bottom-12 left-0 z-10 text-white flex flex-col w-full px-6 md:px-16">
-          <div className="cursor-pointer group inline-flex items-center gap-2 mt-2 project-title">
-            <h2 className="text-[24px] md:text-3xl font-medium transition-transform duration-500 group-hover:translate-y-[-3px]">
-              {project.title}
-            </h2>
-            <span className="block bg-white h-1 mt-2 w-12 transition-all duration-500 group-hover:w-6"></span>
-          </div>
-          <div className="group inline-flex items-center gap-2 mt-2 cursor-pointer all-projects-link">
-            <span className="block bg-white h-0.5 w-24 transition-all duration-500 group-hover:w-12"></span>
-            <h3 className="text-sm md:text-l font-medium transition-transform duration-500 group-hover:translate-x-2">
-              {project.location}
-            </h3>
-          </div>
+      <Header />
+      <div className="min-h-screen px-1 pt-16 pb-8">
+        
+        {/* Slider */}
+        <div className="mx-auto px-6 mt-8 md:mt-14.5">
+          <SliderProjects images={project.images} />
         </div>
-      </div>
 
-      <div className="mx-auto py-12 px-6 text-justify">
-        <p className="text-lg text-gray-300 leading-relaxed glow-text">
-          {project.description}
-        </p>
-      </div>
+        {/* Grid: Data left, Description right */}
+        <div className="mx-auto justify-center px-6 md:grid md:grid-cols-3 gap-3">
+          
+          {/* Data Column */}
+          <div className="flex flex-col w-full py-6 md:py-12 text-black">
+            <div className="inline-flex items-center gap-2 mb-2 project-title">
+              <h2 className="text-[24px] md:text-3xl font-medium">
+                {project.title}
+              </h2>
+              <span className="block bg-black h-1 mt-2 w-12"></span>
+            </div>
 
-      <div className="mx-auto px-6 pb-16">
-        <SliderProjects images={project.images} />
+            <div className="inline-flex items-center gap-2 mb-1">
+              <span className="block bg-black h-0.5 w-24"></span>
+              <h3 className="text-sm md:text-lg font-medium">{project.location}</h3>
+            </div>
+            <div className="inline-flex items-center gap-2 mb-1">
+              <span className="block bg-black h-0.5 w-24"></span>
+              <h3 className="text-sm md:text-lg font-medium">Type: {project.type}</h3>
+            </div>
+            <div className="inline-flex items-center gap-2 mb-1">
+              <span className="block bg-black h-0.5 w-24"></span>
+              <h3 className="text-sm md:text-lg font-medium">Status: {project.status}</h3>
+            </div>
+            <div className="inline-flex items-center gap-2">
+              <span className="block bg-black h-0.5 w-24"></span>
+              <h3 className="text-sm md:text-lg font-medium">Size: {project.size}</h3>
+            </div>
+          </div>
+
+          {/* Description Column */}
+          <div className="col-span-2 text-justify  flex flex-col py-4 md:py-12">
+            <p className="text-lg text-gray-300 leading-relaxed">
+              {project.description}
+            </p>
+          </div>
+
+        </div>
+
       </div>
-    </div>
     </>
   );
 }

@@ -9,8 +9,10 @@ import Header from "@/components/Header";
 export default function ProjectsPage() {
   return (
     <>
-    <Header />
-      <div className="min-h-screen px-1 pt-16 pb-8">
+      <Header />
+      <div
+        className="min-h-screen px-1 pt-18 md:pt-12 pb-8"
+      >
         <div className="text-5xl font-bold mt-8 md:mt-14.5"></div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">

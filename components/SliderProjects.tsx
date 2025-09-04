@@ -34,7 +34,7 @@ export default function SliderProjects({ images }: SliderProjectsProps) {
 
   // Responsive slides
   useEffect(() => {
-    const handleResize = () => setVisibleCount(window.innerWidth < 768 ? 1 : 3);
+    const handleResize = () => setVisibleCount(window.innerWidth < 768 ? 1 : 2);
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -69,7 +69,7 @@ export default function SliderProjects({ images }: SliderProjectsProps) {
             className="flex-shrink-0 relative cursor-pointer"
             style={{
               flexBasis: visibleCount === 1 ? "100%" : `calc(${100 / visibleCount}% - ${gap}px)`,
-              height: visibleCount === 1 ? "80vw" : "300px",
+              height: visibleCount === 1 ? "80vw" : "360px",
             }}
             onClick={() => setModalImage(img)}
           >

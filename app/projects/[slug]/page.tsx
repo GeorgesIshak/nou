@@ -18,10 +18,10 @@ export default async function ProjectPage({
   return (
     <>
       <Header />
-      <div className="min-h-screen px-1 pt-16 pb-8">
+      <div className="min-h-screen px-1 pt-18 md:pt-12 pb-8">
         
         {/* Slider */}
-        <div className="mx-auto px-6 mt-8 md:mt-14.5">
+        <div className="mx-auto px-3 mt-8 md:mt-14.5">
           <SliderProjects images={project.images} />
         </div>
 
@@ -39,27 +39,27 @@ export default async function ProjectPage({
 
             <div className="inline-flex items-center gap-2 mb-1">
               <span className="block bg-black h-0.5 w-24"></span>
-              <h3 className="text-sm md:text-lg font-medium">{project.location}</h3>
+              <h3 className="text-sm md:text-base font-medium">{project.location}</h3>
             </div>
             <div className="inline-flex items-center gap-2 mb-1">
               <span className="block bg-black h-0.5 w-24"></span>
-              <h3 className="text-sm md:text-lg font-medium">Type: {project.type}</h3>
+              <h3 className="text-sm md:text-base font-medium">Type: {project.type}</h3>
             </div>
             <div className="inline-flex items-center gap-2 mb-1">
               <span className="block bg-black h-0.5 w-24"></span>
-              <h3 className="text-sm md:text-lg font-medium">Status: {project.status}</h3>
+              <h3 className="text-sm md:text-base font-medium">Status: {project.status}</h3>
             </div>
             <div className="inline-flex items-center gap-2">
               <span className="block bg-black h-0.5 w-24"></span>
-              <h3 className="text-sm md:text-lg font-medium">Size: {project.size}</h3>
+              <h4 className="text-sm md:text-base font-medium">Size: {project.size}</h4>
             </div>
           </div>
 
           {/* Description Column */}
-          <div className="col-span-2 text-justify  flex flex-col py-4 md:py-12">
-            <p className="text-lg text-gray-300 leading-relaxed">
+          <div className="col-span-2 text-justify flex flex-col mt-0.5 md:mt-23">
+            <h4 className="text-sm md:text-base text-black eading-relaxed">
               {project.description}
-            </p>
+            </h4>
           </div>
 
         </div>

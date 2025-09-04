@@ -37,7 +37,7 @@ export default function ImageSlider() {
             />
             <div className="absolute top-0 left-0 w-full h-full bg-black/30"></div>
 
-            <div className="absolute bottom-100 md:bottom-80 left-7 md:left-16 z-10 text-white flex flex-col">
+            <div className="absolute bottom-100 md:bottom-80 left-7 md:left-4 z-10 text-white flex flex-col">
               {/* Link to the single project page using slug */}
               <Link
                 href={`/projects/${slide.slug}`}
@@ -69,12 +69,15 @@ export default function ImageSlider() {
         <button
           onClick={prevSlide}
           className="text-white text-3xl cursor-pointer"
+           aria-label="Previous slide"
         >
           &#10094;
         </button>
         <button
           onClick={nextSlide}
           className="text-white text-3xl cursor-pointer"
+           aria-label="Next slide"
+          
         >
           &#10095;
         </button>

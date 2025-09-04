@@ -13,7 +13,6 @@ export default function Header({ transparent = false }: HeaderProps) {
 
   const menuItems = [
     { name: "Home", href: "/" },
-   
     {
       name: "Projects",
       href: "/projects",
@@ -24,48 +23,61 @@ export default function Header({ transparent = false }: HeaderProps) {
         { name: "Landscape", href: "/projects/landscape" },
       ],
     },
-     { name: "About Us", href: "/about" },
+    { name: "About Us", href: "/about" },
     { name: "Contact Us", href: "/contact" },
   ];
 
   return (
     <header
       className={`fixed md:absolute top-0 left-0 w-full z-50 p-4 md:p-4 transition-colors duration-300 ${
-        transparent ? "bg-transparent" : "bg-[#2b2929]"
+        transparent ? "bg-transparent" : "bg-white"
       }`}
     >
       <div className="mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link
           href="/"
-          className="relative w-[120px] h-[60px] md:w-[160px] md:h-[60px] block"
+          className="relative w-[110px] h-[70px] md:w-[110px] md:h-[70px] block"
         >
           <Image
-            src="/images/projects/nou.svg"
+            src={
+              transparent
+                ? "/images/projects/nou.svg"
+                : "/images/projects/logo-black.jpeg"
+            }
             alt="Nou Architecture"
             fill
-            style={{ objectFit: "contain" }}
+            style={{ objectFit: "fill" }}
             priority
           />
         </Link>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex">
-          <ul className="flex gap-8 text-white font-normal uppercase text-[18px]">
+          <ul
+            className={`flex gap-8 mt-12 font-normal uppercase text-[18px] ${
+              transparent ? "text-white" : "text-black"
+            }`}
+          >
             {menuItems.map((item) => (
               <li key={item.name} className="relative group">
                 <Link href={item.href}>{item.name}</Link>
                 {item.submenu && (
-                  <ul className="absolute top-full left-0 mt-2 w-40 bg-white text-black shadow-lg rounded opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
+                  <ul
+                    className={`absolute top-full left-0 mt-2 w-40 rounded opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 
+    ${
+      transparent
+        ? "bg-white text-black shadow-2xl"
+        : "bg-white text-black shadow-2xl"
+    }`}
+                  >
                     {item.submenu.map((sub) => (
-                      <li key={sub.name} className="border-b last:border-b-0">
+                      <li key={sub.name} className="border-b last:border-b-0 text-sm">
                         <Link
                           href={sub.href}
-                          className="block px-2 py-2 text-sm hover:bg-gray-100"
+                          className="block px-2 py-2 hover:bg-gray-100"
                         >
                           {sub.name}
-
-                          
                         </Link>
                       </li>
                     ))}
@@ -82,19 +94,19 @@ export default function Header({ transparent = false }: HeaderProps) {
           onClick={() => setIsOpen(!isOpen)}
         >
           <span
-            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
-              isOpen ? "rotate-45 translate-y-2" : ""
-            }`}
+            className={`block w-6 h-0.5 transition-all duration-300 ${
+              transparent ? "bg-white" : "bg-black"
+            } ${isOpen ? "rotate-45 translate-y-2" : ""}`}
           />
           <span
-            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
-              isOpen ? "opacity-0" : ""
-            }`}
+            className={`block w-6 h-0.5 transition-all duration-300 ${
+              transparent ? "bg-white" : "bg-black"
+            } ${isOpen ? "opacity-0" : ""}`}
           />
           <span
-            className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
-              isOpen ? "-rotate-45 -translate-y-2" : ""
-            }`}
+            className={`block w-6 h-0.5 transition-all duration-300 ${
+              transparent ? "bg-white" : "bg-black"
+            } ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}
           />
         </button>
       </div>
@@ -111,13 +123,29 @@ export default function Header({ transparent = false }: HeaderProps) {
             className="flex flex-col justify-center items-center gap-1"
             onClick={() => setIsOpen(false)}
           >
-            <span className="block w-6 h-0.5 bg-black transition-all duration-300 rotate-45 translate-y-2" />
-            <span className="block w-6 h-0.5 bg-black transition-all duration-300 opacity-0" />
-            <span className="block w-6 h-0.5 bg-black transition-all duration-300 -rotate-45 -translate-y-2" />
+            <span
+              className={`block w-6 h-0.5 transition-all duration-300 rotate-45 translate-y-2 ${
+                transparent ? "bg-black" : "bg-black"
+              }`}
+            />
+            <span
+              className={`block w-6 h-0.5 transition-all duration-300 opacity-0 ${
+                transparent ? "bg-black" : "bg-black"
+              }`}
+            />
+            <span
+              className={`block w-6 h-0.5 transition-all duration-300 -rotate-45 -translate-y-2 ${
+                transparent ? "bg-black" : "bg-black"
+              }`}
+            />
           </button>
         </div>
 
-        <ul className="flex flex-col p-8 pt-32 text-black font-normal uppercase text-[18px]">
+        <ul
+          className={`flex flex-col p-8 pt-32 font-normal uppercase text-[18px] ${
+            transparent ? "text-black" : "text-black"
+          }`}
+        >
           {menuItems.map((item, mainIndex) => (
             <li key={item.name} className="border-b last:border-b-0">
               <div className="flex justify-between items-center">
@@ -140,7 +168,9 @@ export default function Header({ transparent = false }: HeaderProps) {
                 {item.submenu && (
                   <button
                     onClick={() => setProjectsOpen(!projectsOpen)}
-                    className="text-black pr-2"
+                    className={`${
+                      transparent ? "text-black" : "text-black"
+                    } pr-2`}
                   >
                     {projectsOpen ? "-" : "+"}
                   </button>

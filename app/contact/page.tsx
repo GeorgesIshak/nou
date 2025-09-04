@@ -10,7 +10,6 @@ export default function ContactPage() {
       <div className="min-h-screen px-8 py-16 md:px-8">
         {/* Grid: Title + Address + Contact Info + Social Media */}
         <div className="flex flex-wrap gap-10 md:gap-20 mb-12 items-start mt-24 md:mt-40">
-          
           {/* Our Address */}
           <div className="flex flex-col gap-4 md:col-span-1">
             <div className="grid items-start gap-4">
@@ -26,7 +25,9 @@ export default function ContactPage() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-[#2b2929] font-semibold text-lg mb-1">Our Address</h3>
+                <h3 className="text-[#2b2929] font-semibold text-lg mb-1">
+                  Our Address
+                </h3>
                 <h6>Nicosia Tower</h6>
                 <h6>Cyprus Street 12</h6>
               </div>
@@ -48,7 +49,9 @@ export default function ContactPage() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-[#2b2929] font-semibold text-lg mb-1">Contact Info</h3>
+                <h3 className="text-[#2b2929] font-semibold text-lg mb-1">
+                  Contact Info
+                </h3>
                 <p className="phone">+357 22 123 456</p>
                 <p className="phone">help@nightingale.com</p>
               </div>
@@ -71,7 +74,9 @@ export default function ContactPage() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-[#2b2929] font-semibold text-lg mb-1">Social Media</h3>
+                <h3 className="text-[#2b2929] font-semibold text-lg mb-1">
+                  Social Media
+                </h3>
                 <h6>Instagram</h6>
                 <h6>Facebook</h6>
               </div>
@@ -82,13 +87,12 @@ export default function ContactPage() {
         {/* Google Map */}
         <div className="w-full h-96 rounded-xl overflow-hidden border border-white/20 shadow-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169415.2372381!2d33.24840733767132!3d35.12641152056339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de174e3e64d5f3%3A0x6f8d1b35db16f1f4!2sNicosia%2C%20Cyprus!5e0!3m2!1sen!2sus!4v1692600000000!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d328.5566549927842!2d33.042583!3d34.674196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e73347d6b1fbd9%3A0x46bd34b0a516077a!2sNou%20Architecture%20Studio!5e0!3m2!1sen!2sus!4v1692600000000!5m2!1sen!2sus"
             width="100%"
-            height="100%"
-            className="border-0"
-            allowFullScreen
+            height="650"
+          
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+        
           ></iframe>
         </div>
       </div>

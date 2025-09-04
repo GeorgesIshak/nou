@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -45,7 +46,7 @@ export default function Header({ transparent = false }: HeaderProps) {
                 ? "/images/projects/nou.svg"
                 : "/images/projects/logo-black.jpeg"
             }
-            alt="Nou Architecture"
+            alt="Nou Architecture Logo"
             fill
             style={{ objectFit: "fill" }}
             priority
@@ -53,7 +54,7 @@ export default function Header({ transparent = false }: HeaderProps) {
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex">
+        <nav className="hidden md:flex" aria-label="Main Navigation">
           <ul
             className={`flex gap-8 mt-12 font-normal uppercase text-[18px] ${
               transparent ? "text-white" : "text-black"
@@ -64,12 +65,8 @@ export default function Header({ transparent = false }: HeaderProps) {
                 <Link href={item.href}>{item.name}</Link>
                 {item.submenu && (
                   <ul
-                    className={`absolute top-full left-0 mt-2 w-40 rounded opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 
-    ${
-      transparent
-        ? "bg-white text-black shadow-2xl"
-        : "bg-white text-black shadow-2xl"
-    }`}
+                    className={`absolute top-full left-0 mt-2 w-40 rounded opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 bg-white text-black shadow-2xl`}
+                    aria-label={`${item.name} submenu`}
                   >
                     {item.submenu.map((sub) => (
                       <li key={sub.name} className="border-b last:border-b-0 text-sm">
@@ -90,6 +87,8 @@ export default function Header({ transparent = false }: HeaderProps) {
 
         {/* Mobile Hamburger */}
         <button
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
           className="md:hidden flex flex-col justify-center items-center gap-1"
           onClick={() => setIsOpen(!isOpen)}
         >
@@ -116,35 +115,23 @@ export default function Header({ transparent = false }: HeaderProps) {
         className={`md:hidden fixed top-0 left-0 w-full h-screen bg-white overflow-auto transition-[max-height] duration-500 ease-in-out ${
           isOpen ? "max-h-screen" : "max-h-0"
         }`}
+        aria-label="Mobile Navigation"
       >
-        {/* X Button */}
+        {/* Close Button */}
         <div className="absolute top-10 right-4 z-50">
           <button
-            className="flex flex-col justify-center items-center gap-1"
+            aria-label="Close menu"
             onClick={() => setIsOpen(false)}
+            className="flex flex-col justify-center items-center gap-1"
           >
-            <span
-              className={`block w-6 h-0.5 transition-all duration-300 rotate-45 translate-y-2 ${
-                transparent ? "bg-black" : "bg-black"
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 transition-all duration-300 opacity-0 ${
-                transparent ? "bg-black" : "bg-black"
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 transition-all duration-300 -rotate-45 -translate-y-2 ${
-                transparent ? "bg-black" : "bg-black"
-              }`}
-            />
+            <span className="block w-6 h-0.5 transition-all duration-300 rotate-45 translate-y-2 bg-black" />
+            <span className="block w-6 h-0.5 transition-all duration-300 opacity-0 bg-black" />
+            <span className="block w-6 h-0.5 transition-all duration-300 -rotate-45 -translate-y-2 bg-black" />
           </button>
         </div>
 
         <ul
-          className={`flex flex-col p-8 pt-32 font-normal uppercase text-[18px] ${
-            transparent ? "text-black" : "text-black"
-          }`}
+          className="flex flex-col p-8 pt-32 font-normal uppercase text-[18px] text-black"
         >
           {menuItems.map((item, mainIndex) => (
             <li key={item.name} className="border-b last:border-b-0">
@@ -167,10 +154,9 @@ export default function Header({ transparent = false }: HeaderProps) {
                 </Link>
                 {item.submenu && (
                   <button
+                    aria-label={projectsOpen ? "Collapse submenu" : "Expand submenu"}
                     onClick={() => setProjectsOpen(!projectsOpen)}
-                    className={`${
-                      transparent ? "text-black" : "text-black"
-                    } pr-2`}
+                    className="pr-2 text-black"
                   >
                     {projectsOpen ? "-" : "+"}
                   </button>
@@ -192,13 +178,9 @@ export default function Header({ transparent = false }: HeaderProps) {
                       key={sub.name}
                       className="transition-all duration-500 ease-out"
                       style={{
-                        transitionDelay: `${
-                          projectsOpen ? subIndex * 100 : 0
-                        }ms`,
+                        transitionDelay: `${projectsOpen ? subIndex * 100 : 0}ms`,
                         opacity: projectsOpen ? 1 : 0,
-                        transform: projectsOpen
-                          ? "translateY(0)"
-                          : "translateY(-10px)",
+                        transform: projectsOpen ? "translateY(0)" : "translateY(-10px)",
                       }}
                     >
                       <Link

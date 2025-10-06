@@ -57,7 +57,7 @@ export default async function ProjectPage({
 
           {/* Description Column */}
           <div className="col-span-2 text-justify flex flex-col mt-0.5 md:mt-23">
-            <h4 className="text-sm md:text-base text-black eading-relaxed">
+            <h4 className="text-sm md:text-base text-black leading-relaxed">
               {project.description}
             </h4>
           </div>

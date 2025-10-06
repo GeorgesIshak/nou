@@ -8,13 +8,13 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <div className="bg-dark-bg text-[#2b2929]  font-montserrat px-8 py-16 mt-40">
+      <div className="bg-dark-bg text-[#2b2929]  font-montserrat px-8 py-16 mt-20 md:mt-40">
         {/* Hero / Introduction */}
         <section className="mx-auto mb-8">
            <h2 className="text-2xl md:text-3xl text-justify font-medium transition-transform duration-500 group-hover:translate-y-[-3px] fade-in mb-4">
                   About Us
            </h2>
-          <p className="text-sm md:text-base text-black leading-relaxed mt-4">
+          <p className="text-sm md:text-base text-black leading-relaxed text-justify mt-4">
             Based in Cyprus, Nou Architecture is a design studio passionate about creating spaces that balance functionality, aesthetics, and context. From bespoke family homes to striking residential towers, our projects reflect a commitment to thoughtful architecture, attention to detail, and innovative use of materials. We specialize in residential buildings that connect with their surroundings, respond to light and landscape, and provide a unique living experience. Each project is tailored to the client’s lifestyle, whether it’s a serene urban home, a vibrant coastal apartment, or a sustainable off-grid residence. At Nou Architecture, we don’t just design buildings—we craft environments that inspire, engage, and endure.
           </p>
         </section>

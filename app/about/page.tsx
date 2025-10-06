@@ -8,16 +8,19 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <div className="bg-dark-bg text-white min-h-screen font-montserrat px-8 py-16 mt-40">
+      <div className="bg-dark-bg text-[#2b2929]  font-montserrat px-8 py-16 mt-40">
         {/* Hero / Introduction */}
-        <section className="text-center mx-auto">
-          <p>
-            We are a team of passionate professionals dedicated to creating
-            innovative solutions for modern businesses.
+        <section className="mx-auto mb-8">
+           <h2 className="text-2xl md:text-3xl font-medium transition-transform duration-500 group-hover:translate-y-[-3px] fade-in mb-4">
+                  About Us
+           </h2>
+          <p className="text-sm md:text-base text-black leading-relaxed mt-4">
+            Based in Cyprus, Nou Architecture is a design studio passionate about creating spaces that balance functionality, aesthetics, and context. From bespoke family homes to striking residential towers, our projects reflect a commitment to thoughtful architecture, attention to detail, and innovative use of materials. We specialize in residential buildings that connect with their surroundings, respond to light and landscape, and provide a unique living experience. Each project is tailored to the client’s lifestyle, whether it’s a serene urban home, a vibrant coastal apartment, or a sustainable off-grid residence. At Nou Architecture, we don’t just design buildings—we craft environments that inspire, engage, and endure.
           </p>
         </section>
 
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-6 p-6 bg-white rounded-lg shadow-md ">
+        {/* Founder / Quote */}
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-6 p-6 bg-white rounded-lg shadow-md mb-8">
           <Image
             src="/images/projects/founder.jpeg"
             alt="Co-Founder"
@@ -26,7 +29,7 @@ export default function AboutPage() {
             className="w-32 h-32 md:w-60 md:h-80 object-cover shadow-md"
           />
           <div className="text-center md:text-left">
-            <p className="text-lg italic text-gray-700">
+            <p className="text-sm md:text-base text-black leading-relaxed">
             &quot;Our mission is to create lasting impact through innovation and
               integrity.&quot;
             </p>

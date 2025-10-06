@@ -28,8 +28,8 @@ export default function ContactPage() {
                 <h3 className="text-[#2b2929] font-semibold text-lg mb-1">
                   Our Address
                 </h3>
-                <h6>Nicosia Tower</h6>
-                <h6>Cyprus Street 12</h6>
+                <h6>Ellados 24,</h6>
+                <h6>Limassol, Cyprus, 3036</h6>
               </div>
             </div>
           </div>
@@ -52,8 +52,26 @@ export default function ContactPage() {
                 <h3 className="text-[#2b2929] font-semibold text-lg mb-1">
                   Contact Info
                 </h3>
-                <p className="phone">+357 22 123 456</p>
-                <p className="phone">help@nightingale.com</p>
+
+                {/* Clickable phone number */}
+                <p>
+                  <a
+                    href="tel:+35796435171"
+                    className="text-[#2b2929] hover:underline"
+                  >
+                    +357 96 435 171
+                  </a>
+                </p>
+
+                {/* Clickable email */}
+                <p>
+                  <a
+                    href="mailto:nada@nouarchitecturestudio.com"
+                    className="text-[#2b2929] hover:underline"
+                  >
+                    nada@nouarchitecturestudio.com
+                  </a>
+                </p>
               </div>
             </div>
           </div>
@@ -62,7 +80,6 @@ export default function ContactPage() {
           <div className="flex flex-col gap-4 md:col-span-1">
             <div className="grid items-start gap-4">
               <div className="p-4 bg-[#2b2929] rounded-xl w-14 flex items-center justify-center transition-transform transform hover:scale-110">
-                {/* Meta Icon */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="white"
@@ -77,8 +94,30 @@ export default function ContactPage() {
                 <h3 className="text-[#2b2929] font-semibold text-lg mb-1">
                   Social Media
                 </h3>
-                <h6>Instagram</h6>
-                <h6>Facebook</h6>
+
+                {/* Instagram */}
+                <p>
+                  <a
+                    href="https://www.instagram.com/nou_architecture_studio/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#2b2929] hover:underline"
+                  >
+                    Instagram
+                  </a>
+                </p>
+
+                {/* Facebook */}
+                <p>
+                  <a
+                    href="https://www.facebook.com/nouarchitecturestudio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#2b2929] hover:underline"
+                  >
+                    Facebook
+                  </a>
+                </p>
               </div>
             </div>
           </div>
@@ -90,9 +129,7 @@ export default function ContactPage() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d328.5566549927842!2d33.042583!3d34.674196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e73347d6b1fbd9%3A0x46bd34b0a516077a!2sNou%20Architecture%20Studio!5e0!3m2!1sen!2sus!4v1692600000000!5m2!1sen!2sus"
             width="100%"
             height="650"
-          
             loading="lazy"
-        
           ></iframe>
         </div>
       </div>

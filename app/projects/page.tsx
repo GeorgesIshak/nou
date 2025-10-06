@@ -31,6 +31,15 @@ export default function ProjectsPage() {
     ${i === 8 ? "sm:col-span-2" : ""}   
     ${i === 9 ? "sm:row-span-2" : ""}   
     ${i === 10 ? "sm:col-span-2" : ""}   
+     ${i ===11 ? "sm:col-span-2" : ""}   
+    ${i === 12? "sm:row-span-2" : ""}   
+    ${i ===13 ? "sm:col-span-2" : ""}   
+    ${i === 14 ? "sm:row-span-2" : ""}   
+    ${i === 15 ? "sm:col-span-2" : ""}   
+    ${i === 16 ? "sm:col-span-2" : ""}   
+    ${i === 17 ? "sm:col-span-2" : ""}   
+    ${i === 18 ? "sm:row-span-2" : ""}   
+    ${i === 19 ? "sm:col-span-2" : ""}   
     min-h-[280px] sm:min-h-[360px] 
   `}
             >

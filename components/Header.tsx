@@ -19,9 +19,9 @@ export default function Header({ transparent = false }: HeaderProps) {
       href: "/projects",
       submenu: [
         { name: "All Projects", href: "/projects" },
-        { name: "Architecture", href: "/projects/architecture" },
-        { name: "Interior", href: "/projects/interior" },
-        { name: "Landscape", href: "/projects/landscape" },
+        { name: "Architecture", href: "/projects" },
+        { name: "Interior", href: "#" },
+        { name: "Landscape", href: "#" },
       ],
     },
     { name: "About Us", href: "/about" },

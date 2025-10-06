@@ -42,7 +42,7 @@ export default function Footer() {
         <div className="flex gap-6">
           {/* Instagram */}
           <Link
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/nou_architecture_studio/"
             target="_blank"
             aria-label="Instagram"
           >
@@ -58,7 +58,7 @@ export default function Footer() {
 
           {/* Facebook */}
           <Link
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/nouarchitecturestudio"
             target="_blank"
             aria-label="Facebook"
           >

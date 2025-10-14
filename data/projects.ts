@@ -12,6 +12,7 @@ Responding to the client's two primary requests—privacy and generous ceiling h
 The guesthouse, designed as a self-contained bachelor pad for the couple’s three sons, features a façade of hollow blocks—forming a porous veil that offers both privacy and texture, blurring the threshold between outside and in.`,
     mainImage: "/images/projects/gy-house1.jpg",
     images: [
+      "/images/projects/gy-house1.jpg",
      "/images/projects/gy-house2.jpg",
     "/images/projects/gy-house3.jpg",
     "/images/projects/gy-house4.jpg",
@@ -30,7 +31,7 @@ Architecturally distinctive, the design draws inspiration from the interlocking 
 With expansive glazing framing uninterrupted views of the Mediterranean, the main living spaces and master bedrooms are oriented to capture the full beauty of Larnaca’s seafront—delivering a refined and immersive seaside lifestyle.`,
     mainImage: "/images/projects/the-marigate1.jpg",
     images: [
-
+"/images/projects/the-marigate1.jpg",
       "/images/projects/the-marigate2.jpg",
       "/images/projects/the-marigate3.jpg",
       "/images/projects/the-marigate4.jpg",
@@ -53,7 +54,7 @@ With expansive glazing framing uninterrupted views of the Mediterranean, the mai
 By shifting and aligning with the grid, the balconies carve out voids within the façade, set against the sleek glass walls of the interiors. This interplay generates a dynamic, diagonal rhythm across the building. The fair-faced concrete balcony walls not only frame the outdoor spaces but also enhance the sense of depth, giving the structure a bold yet refined presence.`,
     mainImage: "/images/projects/the-square1.jpg",
     images: [
- 
+ "/images/projects/the-square1.jpg",
       "/images/projects/the-square2.jpg",
       "/images/projects/the-square3.jpg",
       "/images/projects/the-square4.jpg",
@@ -74,6 +75,7 @@ Flanked by contrasting landscapes—a tranquil public park on one side and a riv
 The façade comes alive with a rhythmic play of shifting balconies, each one uniquely positioned to enhance views and privacy. These outdoor extensions are more than functional; they reinterpret the landscape by integrating lush flower beds and sculptural planters, each featuring a tree dedicated to its respective apartment. The result is a vertical garden that softens the building's form while reinforcing its strong connection to the natural surroundings.`,
    "mainImage": "/images/projects/springside1.jpg",
     "images": [
+      "/images/projects/springside1.jpg",
       "/images/projects/springside2.jpg",
       "/images/projects/springside3.jpg",
       "/images/projects/springside4.jpg",
@@ -96,6 +98,7 @@ The façade comes alive with a rhythmic play of shifting balconies, each one uni
     description: `TE House is set on a narrow, elongated plot, with the design unfolding across three distinct volumes on the ground floor. Upon arrival, a striking planted feature embedded in the ground greets visitors, adding a natural touch to the entryway. At the heart of the home, the kitchen serves as a central hub, seamlessly linking the living area with the private bedroom wing. Adjacent to the kitchen, a charming outdoor dining space is sheltered by a canopy of grapevines, offering a serene setting for al fresco gatherings. The pool extends the living area into the landscape, blurring the lines between interior and exterior spaces while connecting the home to the lush surrounding garden.`,
     mainImage: "/images/projects/te-house1.jpg",
     images: [
+      "/images/projects/te-house1.jpg",
       "/images/projects/te-house2.jpg",
       "/images/projects/te-house3.png", 
       "/images/projects/te-house4.png",
@@ -113,6 +116,7 @@ The site’s dual orientation—facing both north and south—posed the challeng
 Spread across two levels, the ground floor hosts the living areas, where the interior merges with a central garden, two courtyards, and a pool that extends the living space outdoors. The clients’ vision of a house immersed in nature comes alive here, with greenery framing daily life. Framed by the lush garden, the boundaries between inside and outside are blurred, creating a home that flows effortlessly with nature. On the upper floor, bedrooms are flooded with natural light and oriented toward tranquil views of the gardens and courtyards. The result is a serene retreat at the heart of the city, where history, nature, and modern living coexist in harmony.`,
     "mainImage": "/images/projects/na-house-interior1.jpg",
     "images": [
+      "/images/projects/na-house-interior1.jpg",
       "/images/projects/na-house-interior2.jpg",
       "/images/projects/na-house-interior3.png", 
       "/images/projects/na-house-interior4.jpg",
@@ -131,6 +135,7 @@ The house is composed of two volumes: the taller 4.3-meter-high living space gra
 The interior material selection of the house is also of nature by using real travertino marble for the living space, terrazzo bathrooms, and parquet floors.`,
  "mainImage": "/images/projects/sia-house1.jpg",
     "images": [
+      "/images/projects/sia-house1.jpg",
       "/images/projects/sia-house2.jpg",
       "/images/projects/sia-house3.jpg",
       "/images/projects/sia-house4.jpg",
@@ -155,6 +160,7 @@ The design is guided by a smart modular approach, offering a variety of apartmen
 Responding to the sun’s path, the tower subtly twists as it rises, creating a dynamic silhouette. This movement, along with the extrusion of units, generates spacious balconies and terraces for every apartment—each one opening to panoramic views of the sea and the port.`,
        mainImage: "/images/projects/tetris1.jpg",
     images: [
+      "/images/projects/tetris1.jpg",
       "/images/projects/tetris2.jpg",
       "/images/projects/tetris3.jpg", 
       "/images/projects/tetris4.jpg",
@@ -174,6 +180,7 @@ The key feature of the project was rethinking the conventional separation walls 
 Located in a quiet residential area of Larnaca, Pearl House 5 distinguishes itself from its surroundings. The building has become a recognizable reference point in the neighborhood, affectionately known as “the curved building.”`,
     mainImage: "/images/projects/pearl-house5-1.jpg",
     images: [
+       "/images/projects/pearl-house5-1.jpg",
       "/images/projects/pearl-house5-2.jpg",
       "/images/projects/pearl-house5-3.jpg",
       "/images/projects/pearl-house5-4.jpg",
@@ -192,6 +199,7 @@ Located in a quiet residential area of Larnaca, Pearl House 5 distinguishes itse
 Windows are accentuated with bold framing elements, while the main circulation staircases are fully glazed, transforming them into both a light feature and a defining element of the façade. Vertical louvers provide privacy while allowing filtered daylight, reinforcing the balance between openness and intimacy.`,
     mainImage: "/images/projects/koumi-villa1.jpg",
     images: [
+      "/images/projects/koumi-villa1.jpg",
       "/images/projects/koumi-villa2.jpg",
       "/images/projects/koumi-villa3.jpg",
       "/images/projects/koumi-villa4.jpg",
@@ -208,6 +216,7 @@ Windows are accentuated with bold framing elements, while the main circulation s
     "status": "Completed",
     "mainImage": "/images/projects/h432-1.jpg",
    "images": [
+    "/images/projects/h432-1.jpg",
         "/images/projects/h432-2.jpg",
         "/images/projects/h432-3.jpg",
         "/images/projects/h432-4.jpg",
@@ -225,6 +234,7 @@ Windows are accentuated with bold framing elements, while the main circulation s
     "status": "Completed",
      "mainImage": "/images/projects/port-avenue1.jpg",
    "images": [
+    "/images/projects/port-avenue1.jpg",
       "/images/projects/port-avenue2.jpg",
       "/images/projects/port-avenue3.jpg",
      
@@ -241,7 +251,7 @@ Windows are accentuated with bold framing elements, while the main circulation s
     "status": "Completed",
     "mainImage": "/images/projects/down-town-view1.jpg",
     "images": [
-      
+      "/images/projects/down-town-view1.jpg",
       "/images/projects/down-town-view2.png",
       "/images/projects/down-town-view3.jpg",
       "/images/projects/down-town-view4.jpg",
@@ -260,6 +270,7 @@ Windows are accentuated with bold framing elements, while the main circulation s
     "status": "Completed",
     "mainImage": "/images/projects/the-gem1.jpg",
     "images": [
+       "/images/projects/the-gem1.jpg",
       "/images/projects/the-gem2.jpg",
       "/images/projects/the-gem3.png", 
      
@@ -275,6 +286,7 @@ Windows are accentuated with bold framing elements, while the main circulation s
     "status": "Completed",
     "mainImage": "/images/projects/marina-living1.jpg",
     "images": [
+      "/images/projects/marina-living1.jpg",
       "/images/projects/marina-living2.jpg",
       "/images/projects/marina-living3.jpg",
       "/images/projects/marina-living4.jpg",
@@ -292,6 +304,7 @@ Windows are accentuated with bold framing elements, while the main circulation s
     "status": "Completed",
     "mainImage": "/images/projects/ras-villa1.jpg",
     "images": [
+      "/images/projects/ras-villa1.jpg",
       "/images/projects/ras-villa2.jpg",
       "/images/projects/ras-villa3.jpg", 
       "/images/projects/ras-villa4.jpg",

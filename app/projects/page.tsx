@@ -15,30 +15,30 @@ export default function ProjectsPage() {
       >
         <div className="text-5xl font-bold mt-8 md:mt-14.5"></div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1">
           {projects.map((project, i) => (
             <div
               key={project.slug}
               className={`
     relative group overflow-hidden
-    ${i === 1 ? "sm:col-span-2" : ""}   
+    ${i === 1 ? "sm:col-span-1" : ""}   
     ${i === 2 ? "sm:col-span-2" : ""}   
-    ${i === 3 ? "sm:row-span-2" : ""}   
-    ${i === 4 ? "sm:col-span-2" : ""}   
-    ${i === 5 ? "sm:row-span-2" : ""}   
-    ${i === 6 ? "sm:col-span-2" : ""}   
+    ${i === 3 ? "sm:col-span-2" : ""}   
+    ${i === 4 ? "sm:col-span-1" : ""}   
+    ${i === 5 ? "sm:col-span-1" : ""}   
+    ${i === 6 ? "sm:col-span-1" : ""}   
     ${i === 7 ? "sm:col-span-2" : ""}   
-    ${i === 8 ? "sm:col-span-2" : ""}   
-    ${i === 9 ? "sm:row-span-2" : ""}   
-    ${i === 10 ? "sm:col-span-2" : ""}   
-     ${i ===11 ? "sm:col-span-2" : ""}   
-    ${i === 12? "sm:row-span-2" : ""}   
+    ${i === 8 ? "sm:col-span-1" : ""}   
+    ${i === 9 ? "sm:col-span-2" : ""}   
+    ${i === 10 ? "sm:col-span-1" : ""}   
+     ${i ===11 ? "sm:col-span-1" : ""}   
+    ${i === 12? "sm:col-span-1" : ""}   
     ${i ===13 ? "sm:col-span-2" : ""}   
-    ${i === 14 ? "sm:row-span-2" : ""}   
+    ${i === 14 ? "sm:col-span-1" : ""}   
     ${i === 15 ? "sm:col-span-2" : ""}   
-    ${i === 16 ? "sm:col-span-2" : ""}   
-    ${i === 17 ? "sm:col-span-2" : ""}   
-    ${i === 18 ? "sm:row-span-2" : ""}   
+    ${i === 16 ? "sm:col-span-1" : ""}   
+    ${i === 17 ? "sm:col-span-1" : ""}   
+    ${i === 18 ? "sm:col-span-1" : ""}   
     ${i === 19 ? "sm:col-span-2" : ""}   
     min-h-[280px] sm:min-h-[360px] 
   `}
@@ -47,7 +47,9 @@ export default function ProjectsPage() {
                 src={project.mainImage}
                 alt={project.title}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  style={{ aspectRatio: "90/ 32" }} // wider frame
+
+                className="object-fill object-center transition-transform duration-500 group-hover:scale-110"
               />
 
               <div

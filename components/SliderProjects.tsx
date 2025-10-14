@@ -34,7 +34,7 @@ export default function SliderProjects({ images }: SliderProjectsProps) {
 
   // Responsive slides
   useEffect(() => {
-    const handleResize = () => setVisibleCount(window.innerWidth < 768 ? 1 : 2);
+    const handleResize = () => setVisibleCount(window.innerWidth < 768 ? 1 : 3);
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -55,35 +55,40 @@ export default function SliderProjects({ images }: SliderProjectsProps) {
 
   return (
     <div className="relative w-full overflow-hidden">
+  <div
+    ref={sliderRef}
+    className="flex transition-transform duration-500"
+    style={{
+      gap: visibleCount === 1 ? "0px" : `${gap}px`,
+      transform: `translateX(-${current * (100 / visibleCount)}%)`,
+    }}
+  >
+    {slides.map((img, idx) => (
       <div
-        ref={sliderRef}
-        className="flex transition-transform duration-500"
+        key={idx}
+        className="relative flex-shrink-0 overflow-hidden rounded-lg bg-black aspect-[5/4]" // taller, consistent frame
         style={{
-          gap: visibleCount === 1 ? "0px" : `${gap}px`,
-          transform: `translateX(-${current * (100 / visibleCount)}%)`,
+          // equal columns accounting for gaps
+          flexBasis:
+            visibleCount === 1
+              ? "100%"
+              : `calc((100% - ${(visibleCount - 1) * gap}px) / ${visibleCount})`,
         }}
+        onClick={() => setModalImage(img)}
       >
-        {slides.map((img, idx) => (
-          <div
-            key={idx}
-            className="flex-shrink-0 relative cursor-pointer"
-            style={{
-              flexBasis: visibleCount === 1 ? "100%" : `calc(${100 / visibleCount}% - ${gap}px)`,
-              height: visibleCount === 1 ? "80vw" : "360px",
-            }}
-            onClick={() => setModalImage(img)}
-          >
-            <Image
-              src={img}
-              alt={`Slide ${idx}`}
-              fill
-              className="object-cover rounded-lg"
-              style={{ pointerEvents: "none" }}
-              sizes="(max-width: 768px) 100vw, 33vw"
-            />
-          </div>
-        ))}
+        <Image
+          src={img}
+          alt={`Slide ${idx}`}
+          fill
+          className="object-cover" // full-bleed, tiny crop for consistency
+          style={{ objectPosition: "center", pointerEvents: "none" }}
+          sizes={`(max-width: 768px) 100vw, ${100 / visibleCount}vw`}
+          priority={idx < 3}
+        />
       </div>
+    ))}
+  </div>
+
 
       {/* Buttons */}
       <button

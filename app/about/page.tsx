@@ -8,36 +8,65 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <div className="bg-dark-bg text-[#2b2929]  font-montserrat px-8 py-16 mt-20 md:mt-40">
+      <div className="bg-dark-bg text-[#2b2929]  font-montserrat px-8 py-16 mt-20 md:mt-30">
         {/* Hero / Introduction */}
         <section className="mx-auto mb-8">
            <h2 className="text-2xl md:text-3xl text-justify font-medium transition-transform duration-500 group-hover:translate-y-[-3px] fade-in mb-4">
                   About Us
            </h2>
           <p className="text-sm md:text-base text-black leading-relaxed text-justify mt-4">
-            Based in Cyprus, Nou Architecture is a design studio passionate about creating spaces that balance functionality, aesthetics, and context. From bespoke family homes to striking residential towers, our projects reflect a commitment to thoughtful architecture, attention to detail, and innovative use of materials. We specialize in residential buildings that connect with their surroundings, respond to light and landscape, and provide a unique living experience. Each project is tailored to the client’s lifestyle, whether it’s a serene urban home, a vibrant coastal apartment, or a sustainable off-grid residence. At Nou Architecture, we don’t just design buildings—we craft environments that inspire, engage, and endure.
-          </p>
+  <span className="font-bold">nou architecture studio</span> is an international design office founded in 2017 in Limassol, Cyprus. 
+  The studio provides comprehensive services in architecture, interior design, and landscape design, 
+  delivering projects that range in scale from complete buildings to private residences and landscape developments. 
+  Guided by a philosophy rooted in context, concept, nature, and light, nou architecture studio approaches every project—regardless of type or scale—as a unique narrative shaped by its surroundings, giving each work a distinct identity.
+  <br />
+  <br />
+  Our practice is unified by a commitment to thoughtful detail and spatial harmony. Each project becomes an exploration of how light, material, and proportion define atmosphere and emotion.
+  
+  We see architecture as a projection of still moments—translated through walls, spaces, and landscape—crafted to reflect the character of each site and the lifestyle of its users. For us, architecture is not merely about form, but about designing distinctive, tailor-made experiences that elevate everyday life.
+
+  With a focus on innovation, functionality, and personalized service, nou architecture studio delivers unique, practical designs that realize each project’s full potential to the highest international standards.
+</p>
+
+
         </section>
 
-        {/* Founder / Quote */}
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-6 p-4 md:p6 bg-white rounded-lg shadow-md mb-8">
-          <Image
-            src="/images/projects/founder.jpeg"
-            alt="Co-Founder"
-            width={260} 
-            height={260} 
-            className="w-60 h-60 md:w-60 md:h-80 object-cover shadow-md"
-          />
-          <div className="text-center md:text-left">
-            <p className="text-sm md:text-base text-black leading-relaxed text-justify">
-            &quot;Our mission is to create lasting impact through innovation and
-              integrity.&quot;
-            </p>
-            <p className="mt-4 font-semibold text-gray-900">
-              — Jane Doe, Co-Founder
-            </p>
-          </div>
-        </div>
+      {/* Founder / Quote */}
+<div className="flex flex-col md:flex-row items-center justify-center gap-8 p-6 md:p-8 bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] hover:shadow-[0_8px_28px_rgba(0,0,0,0.15)] transition-shadow duration-300 mx-auto text-center md:text-left">
+  <Image
+    src="/images/projects/founder.jpeg"
+    alt="Co-Founder"
+    width={260}
+    height={260}
+    className="w-60 h-60 md:w-64 md:h-80 object-cover rounded-xl shadow-md"
+  />
+
+  <div className="flex flex-col justify-center text-left">
+  <p className="text-sm md:text-base text-black leading-relaxed text-justify">
+    &quot;Nada Noueihed is an architect with extensive experience across all sectors of architectural design and supervision.
+    A graduate of the American University of Beirut, where she was nominated for the Azar Award, she began her professional journey
+    in Lebanon and Cyprus before founding nou architecture studio in Limassol in 2017.
+    <br />
+    <br />
+    Throughout her career, Nada has contributed to and led the design of large-scale projects in Cyprus, collaborating with a range of
+    firms and consultants on significant developments. Her work reflects a deep commitment to contextual design, refined detailing,
+    and the pursuit of spaces that harmonize functionality with emotion.
+    &quot;
+  </p>
+
+  <div
+    id="founder-title"
+    className="mt-6 md:mt-8 font-semibold text-gray-900 leading-tight text-left mx-0"
+  >
+    <span className="font-bold block text-lg">Nada Noueihed</span>
+    <span className="block text-[#2b2929] font-normal">
+      Founder &amp; Principal Architect
+    </span>
+  </div>
+</div>
+
+</div>
+
       </div>
 
       <Footer />

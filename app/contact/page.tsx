@@ -9,7 +9,7 @@ export default function ContactPage() {
       <Header />
       <div className="min-h-screen px-8 py-16 md:px-8">
         {/* Grid: Title + Address + Contact Info + Social Media */}
-        <div className="flex flex-wrap gap-10 md:gap-20 mb-12 items-start mt-24 md:mt-40">
+        <div className="flex flex-wrap gap-10 md:gap-20 mb-12 items-start mt-24 md:mt-30">
           {/* Our Address */}
           <div className="flex flex-col gap-4 md:col-span-1">
             <div className="grid items-start gap-4">

@@ -40,7 +40,7 @@ export default function ProjectsPage() {
     ${i === 17 ? "sm:col-span-1" : ""}   
     ${i === 18 ? "sm:col-span-1" : ""}   
     ${i === 19 ? "sm:col-span-2" : ""}   
-    min-h-[320px] sm:min-h-[400px] 
+    min-h-[320px] sm:min-h-[420px] 
   `}
             >
               <Image
@@ -49,7 +49,7 @@ export default function ProjectsPage() {
                 fill
                   style={{ aspectRatio: "90/ 32" }} // wider frame
 
-                className="object-fill object-center transition-transform duration-500 group-hover:scale-110"
+                className="object-cover object-top transition-transform duration-500 group-hover:scale-110"
               />
 
               <div

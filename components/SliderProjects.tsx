@@ -68,8 +68,8 @@ export default function SliderProjects({ images }: SliderProjectsProps) {
               src={img}
               alt={`Slide ${idx}`}
               fill
-              className="object-fill"
-              style={{ objectPosition: "center", pointerEvents: "none" }}
+              className="object-cover"
+              style={{ objectPosition: "top", pointerEvents: "none" }}
               sizes={`(max-width: 768px) 100vw, ${100 / visibleCount}vw`}
               priority={idx < 3}
             />

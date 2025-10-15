@@ -15,80 +15,67 @@ export default function SliderProjects({ images }: SliderProjectsProps) {
 
   const gap = 16;
 
-  // Create a duplicated slides array for infinite effect
   const slides = [...images, ...images];
 
-  const next = useCallback(() => {
-    setCurrent((prev) => prev + 1);
-  }, []);
+  const next = useCallback(() => setCurrent((prev) => prev + 1), []);
+  const prev = useCallback(() => setCurrent((prev) => prev - 1), []);
 
-  const prev = useCallback(() => {
-    setCurrent((prev) => prev - 1);
-  }, []);
-
-  // Auto-scroll
   useEffect(() => {
     const interval = setInterval(next, 6000);
     return () => clearInterval(interval);
   }, [next]);
 
-  // Responsive slides
   useEffect(() => {
-    const handleResize = () => setVisibleCount(window.innerWidth < 768 ? 1 : 3);
+    const handleResize = () =>
+      setVisibleCount(window.innerWidth < 768 ? 1 : 3);
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Handle infinite effect
   useEffect(() => {
     const total = images.length;
-
-    if (current >= total) {
-      // jump back to start instantly
-      setTimeout(() => setCurrent(0), 300); // match CSS transition
-    }
-    if (current < 0) {
-      setTimeout(() => setCurrent(total - 1), 300);
-    }
+    if (current >= total) setTimeout(() => setCurrent(0), 300);
+    if (current < 0) setTimeout(() => setCurrent(total - 1), 300);
   }, [current, images.length]);
 
   return (
     <div className="relative w-full overflow-hidden">
-  <div
-    ref={sliderRef}
-    className="flex transition-transform duration-500"
-    style={{
-      gap: visibleCount === 1 ? "0px" : `${gap}px`,
-      transform: `translateX(-${current * (100 / visibleCount)}%)`,
-    }}
-  >
-    {slides.map((img, idx) => (
       <div
-        key={idx}
-        className="relative flex-shrink-0 overflow-hidden rounded-lg bg-black aspect-[5/4]" // taller, consistent frame
+        ref={sliderRef}
+        className="flex transition-transform duration-500"
         style={{
-          // equal columns accounting for gaps
-          flexBasis:
-            visibleCount === 1
-              ? "100%"
-              : `calc((100% - ${(visibleCount - 1) * gap}px) / ${visibleCount})`,
+          gap: visibleCount === 1 ? "0px" : `${gap}px`,
+          transform: `translateX(-${current * (100 / visibleCount)}%)`,
         }}
-        onClick={() => setModalImage(img)}
       >
-        <Image
-          src={img}
-          alt={`Slide ${idx}`}
-          fill
-          className="object-cover" // full-bleed, tiny crop for consistency
-          style={{ objectPosition: "center", pointerEvents: "none" }}
-          sizes={`(max-width: 768px) 100vw, ${100 / visibleCount}vw`}
-          priority={idx < 3}
-        />
+        {slides.map((img, idx) => (
+          <div
+            key={idx}
+            className="
+              relative flex-shrink-0 overflow-hidden rounded-lg bg-black
+              sm:aspect-[5/4] h-[280px] sm:h-auto
+            "
+            style={{
+              flexBasis:
+                visibleCount === 1
+                  ? "100%"
+                  : `calc((100% - ${(visibleCount - 1) * gap}px) / ${visibleCount})`,
+            }}
+            onClick={() => setModalImage(img)}
+          >
+            <Image
+              src={img}
+              alt={`Slide ${idx}`}
+              fill
+              className="object-fill"
+              style={{ objectPosition: "center", pointerEvents: "none" }}
+              sizes={`(max-width: 768px) 100vw, ${100 / visibleCount}vw`}
+              priority={idx < 3}
+            />
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
-
 
       {/* Buttons */}
       <button

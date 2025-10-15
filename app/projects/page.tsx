@@ -40,7 +40,7 @@ export default function ProjectsPage() {
     ${i === 17 ? "sm:col-span-1" : ""}   
     ${i === 18 ? "sm:col-span-1" : ""}   
     ${i === 19 ? "sm:col-span-2" : ""}   
-    min-h-[280px] sm:min-h-[360px] 
+    min-h-[320px] sm:min-h-[400px] 
   `}
             >
               <Image

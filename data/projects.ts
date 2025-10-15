@@ -5,7 +5,7 @@ export const projects = [
     type: "Residential Home",
     size: "600sqm",
     location: "Nicosia, Cyprus",
-    status: "Completed",
+    status: "Permit",
     description: `Designed for a family of five with a passion for contemporary art, GY House is a bespoke residence that balances the needs of everyday family life with the elegance of a curated gallery space. 
 At the heart of the home is a dramatic entrance, conceived to showcase a suspended sculptural artwork by a renowned Cypriot artist—a powerful introduction to the clients’ extensive art collection. 
 Responding to the client's two primary requests—privacy and generous ceiling heights—the architecture is shaped like a modern fortress: solid and introverted, with blind perimeter walls that shield the interior from view. Above, the first-floor volume appears to float, visually detached from the base by a ribbon of horizontal windows that filter light into the ground floor, creating moments of illumination and intrigue. 
@@ -25,7 +25,7 @@ The guesthouse, designed as a self-contained bachelor pad for the couple’s thr
     type: "Residential Building",
     size: "1850sqm",
     location: "Larnaca, Cyprus",
-    status: "Completed",
+    status: "Under Construction",
     description: `Rising prominently along the front line of the New Marina in Larnaca, Marigate is a striking 60-meter residential tower that redefines coastal living. Spanning 12 floors and comprising just 9 exclusive apartments, the building offers a rare blend of privacy, space, and panoramic sea views.
 Architecturally distinctive, the design draws inspiration from the interlocking forms of Tetris, creating a dynamic façade and split-level interiors. This playful configuration allows for double-height living areas and elevated bedrooms, enhancing both the spatial experience and natural light throughout each unit.
 With expansive glazing framing uninterrupted views of the Mediterranean, the main living spaces and master bedrooms are oriented to capture the full beauty of Larnaca’s seafront—delivering a refined and immersive seaside lifestyle.`,
@@ -49,7 +49,7 @@ With expansive glazing framing uninterrupted views of the Mediterranean, the mai
     type: "Residential Building",
     size: "950sqm",
     location: "Nicosia, Cyprus",
-    status: "Completed",
+    status: "Under Construction",
     description: `The Square is a distinctive four-story residential building composed of ten apartments, each with its own unique layout—there are no typical floors. The façade reflects the internal grid of the plan, creating a striking dialogue between open balconies and enclosed living areas.
 By shifting and aligning with the grid, the balconies carve out voids within the façade, set against the sleek glass walls of the interiors. This interplay generates a dynamic, diagonal rhythm across the building. The fair-faced concrete balcony walls not only frame the outdoor spaces but also enhance the sense of depth, giving the structure a bold yet refined presence.`,
     mainImage: "/images/projects/the-square1.jpg",
@@ -94,7 +94,7 @@ The façade comes alive with a rhythmic play of shifting balconies, each one uni
     type: "Residential Home",
     size: "240sqm",
     location: "Nicosia, Cyprus",
-    status: "Completed",
+    status: "Concept",
     description: `TE House is set on a narrow, elongated plot, with the design unfolding across three distinct volumes on the ground floor. Upon arrival, a striking planted feature embedded in the ground greets visitors, adding a natural touch to the entryway. At the heart of the home, the kitchen serves as a central hub, seamlessly linking the living area with the private bedroom wing. Adjacent to the kitchen, a charming outdoor dining space is sheltered by a canopy of grapevines, offering a serene setting for al fresco gatherings. The pool extends the living area into the landscape, blurring the lines between interior and exterior spaces while connecting the home to the lush surrounding garden.`,
     mainImage: "/images/projects/te-house1.jpg",
     images: [
@@ -110,7 +110,7 @@ The façade comes alive with a rhythmic play of shifting balconies, each one uni
     type: "Residential Home",
     size: "280sqm",
     location: "Limassol, Cyprus",
-    status: "Completed",
+    status: "Permit",
     description: `NA House sits on a narrow 9x30 plot in the heart of Limassol’s historic center, just steps from the beach. Tucked between two ancient stone walls and anchored by the preserved façade of an old house, it seamlessly weaves history into a contemporary urban home.
 The site’s dual orientation—facing both north and south—posed the challenge of balancing privacy with openness. The design responds by introducing light, air, and greenery at every turn, creating a home that feels both secluded and connected to its surroundings.
 Spread across two levels, the ground floor hosts the living areas, where the interior merges with a central garden, two courtyards, and a pool that extends the living space outdoors. The clients’ vision of a house immersed in nature comes alive here, with greenery framing daily life. Framed by the lush garden, the boundaries between inside and outside are blurred, creating a home that flows effortlessly with nature. On the upper floor, bedrooms are flooded with natural light and oriented toward tranquil views of the gardens and courtyards. The result is a serene retreat at the heart of the city, where history, nature, and modern living coexist in harmony.`,
@@ -154,7 +154,7 @@ The interior material selection of the house is also of nature by using real tra
     type: "Residential Building",
     size: "7987sqm",
     location: "Limassol, Cyprus",
-    status: "Completed",
+    status: "Permit",
     description: `The Tetris rises prominently in front of Limassol’s port, in an area where the city’s industrial past is transforming into a hub of contemporary development. With 24 floors and 65 apartments, it stands as a bold architectural statement on the skyline.
 The design is guided by a smart modular approach, offering a variety of apartment typologies ranging from one- to three-bedroom units. A structural grid allows these modules to be interchanged with ease, giving the building both commercial flexibility and architectural coherence.
 Responding to the sun’s path, the tower subtly twists as it rises, creating a dynamic silhouette. This movement, along with the extrusion of units, generates spacious balconies and terraces for every apartment—each one opening to panoramic views of the sea and the port.`,
@@ -213,7 +213,7 @@ Windows are accentuated with bold framing elements, while the main circulation s
     "size": "820sqm",
     "location": "Larnaca, Cyprus",
     "description": "Set on a very small plot near the new port of Larnaca, the challenge was to design a six-story building with nine apartments, each benefiting from a direct view toward the main road. The building draws inspiration from its industrial surroundings, expressed through fair-faced concrete walls and black metal beams that frame the balconies. Its south-facing façade is defined by movable photovoltaic panels, a key design feature. By placing the panels on the façade rather than on the roof gardens, the project achieves multiple goals: generating renewable energy, providing natural shading, and freeing the rooftop spaces for the exclusive use of residents. This dual-function solution merges sustainability with lifestyle, turning a technical requirement into both an architectural expression and a commercial advantage.",
-    "status": "Completed",
+    "status": "Permit",
     "mainImage": "/images/projects/h432-1.jpg",
    "images": [
     "/images/projects/h432-1.jpg",
@@ -231,7 +231,7 @@ Windows are accentuated with bold framing elements, while the main circulation s
     "size": "2750sqm",
     "location": "Limassol, Cyprus",
     "description": "Situated directly in front of the new marina of Larnaca and surrounded by three roads, Port Avenue occupies a prime location where every apartment enjoys unobstructed views of the sea and marina. The residential tower combines one-, two-, and three-bedroom apartments, each carefully designed to take full advantage of its surroundings. The architecture emphasizes elegance and transparency, featuring expansive glazed openings, vertical cuts in the façade, terracotta cladding, and long, refined balconies that extend the living spaces outward. Rising 13 floors and housing 23 apartments, Port Avenue stands as one of Larnaca’s most prominent high-rise buildings. The middle floor is dedicated to a flexible commercial space, envisioned as a restaurant with panoramic views of the sea—making it both a landmark residence and a destination.",
-    "status": "Completed",
+    "status": "Permit",
      "mainImage": "/images/projects/port-avenue1.jpg",
    "images": [
     "/images/projects/port-avenue1.jpg",
@@ -248,7 +248,7 @@ Windows are accentuated with bold framing elements, while the main circulation s
     "size": "1250sqm",
     "location": "Nicosia, Cyprus",
     "description": "Located in a quiet residential area in the center of Nicosia, Down Town Views sits on a triangular plot along a sloping road. The challenge was to fit 14 units—eight one-bedroom and eight two-bedroom apartments—across four floors while ensuring that each apartment enjoys a direct view of the main road. The solution came through three extruded volumes, connected by their balconies and living spaces, all oriented toward the front. Fair-faced concrete walls and metallic balcony frames emphasize these projections, shaping the overall composition and giving the building a distinctive industrial identity.",
-    "status": "Completed",
+    "status": "Permit",
     "mainImage": "/images/projects/down-town-view1.jpg",
     "images": [
       "/images/projects/down-town-view1.jpg",
@@ -267,7 +267,7 @@ Windows are accentuated with bold framing elements, while the main circulation s
     "size": "520sqm",
     "location": "Larnaca, Cyprus",
     "description": "Tucked away at the end of a quiet cul-de-sac in Larnaca, this distinctive five-story building enjoys a prime location overlooking both a green area and the sea. With just one two-bedroom apartment per floor, it offers residents a sense of luxurious privacy, enhanced by floor-to-ceiling glazing and open views from three surrounding roads—the main façade opening directly to the sea. Constrained by a small plot and a minimal structural footprint at ground level, the building’s unique form emerges from its engineering: slanted balconies that not only resolve the structural design but also give the building its unmistakable character.",
-    "status": "Completed",
+    "status": "Permit",
     "mainImage": "/images/projects/the-gem1.jpg",
     "images": [
        "/images/projects/the-gem1.jpg",
@@ -280,7 +280,7 @@ Windows are accentuated with bold framing elements, while the main circulation s
     "slug": "marina-living",
     "title": "Marina Living",
     "type": "Residential Building",
-    "size": "N/A",
+    "size": "2500sqm",
     "location": "Larnaca, Cyprus",
     "description": "In the vibrant center of Larnaca, near the new marina where the city’s latest wave of real estate growth is unfolding, Marina Green rises as a six-story building with 24 residential units consisting of one- and two-bedroom apartments. The ground floor accommodates a flexible commercial space, while the upper levels are dedicated to residential living, offering a blend of urban convenience and comfort. Shading louvers define the south and east façades, serving both as protective screens against direct sunlight and as elegant barriers for the integrated planters, adding greenery to the building’s architectural expression.",
     "status": "Completed",
@@ -301,7 +301,7 @@ Windows are accentuated with bold framing elements, while the main circulation s
     "size": "740sqm",
     "location": "Ras el Maten, Lebanon",
     "description": "Located in a small Lebanese village within a dense forest of pine trees, the project called for two independent houses on a steep plot—one for the client and his family, and the other for his bachelor son. The design resulted in two separate homes that coexist without intersecting, each accessed by its own vehicular ramp. The ramps overlap but lead to entirely independent worlds. The family house is accessed from above. Parking is located at the top, after which one descends into the home, discovering its functions as a sequence of volumes embedded in the terrain and connected by corridors carved through the landscape. The garden, pine trees, and surrounding forest seamlessly weave into the architecture, becoming part of the living experience. The bachelor house sits below, accessed by a ramp that passes under the family’s. Suspended above the sloping ground, it opens outward with sweeping views over the forest, a light and elevated counterpart to the embedded family home.",
-    "status": "Completed",
+    "status": "Concept",
     "mainImage": "/images/projects/ras-villa1.jpg",
     "images": [
       "/images/projects/ras-villa1.jpg",
@@ -319,9 +319,12 @@ Windows are accentuated with bold framing elements, while the main circulation s
     "size": "2450sqm",
     "location": "Larnaca, Cyprus",
     "description": "Salt Eleven is an exclusive residential development located just steps from the beach—a three-minute walk to the crystal waters of Larnaca. Adjacent to a public green area, the project allows nature to flow into the compound through landscaped gardens allocated to each home. This unified, gated community consists of 11 independent maisonettes, designed in five distinct typologies ranging between three and four bedrooms. The variety of layouts offers flexible living options tailored to different lifestyles. Each home features its own private garden and attic, with select units enjoying the luxury of private pools. A dedicated private passage weaves through the project, connecting the two streets that frame the site, and enhancing both accessibility and community integration.",
-    "status": "Completed",
+    "status": "Permit",
     "mainImage": "/images/projects/salt-eleven1.jpg",
-    "images": ["/images/projects/salt-eleven1.jpg,"]
+    "images": ["/images/projects/salt-eleven1.jpg",
+      "/images/projects/salt-eleven1.jpg",
+      "/images/projects/salt-eleven1.jpg"
+    ]
   },
 
   {
@@ -331,9 +334,11 @@ Windows are accentuated with bold framing elements, while the main circulation s
     "size": "390sqm",
     "location": "Larnaca, Cyprus",
     "description": "On a single plot in a quiet Larnaca neighborhood, two identical houses sit side by side, designed to balance functionality, sustainability, and architectural presence. Constrained by the allowable building density, each home incorporates an attic to provide additional living space and enhance the project’s commercial appeal. The pitched roofs of these attics not only create generous interior volumes but also host photovoltaic panels, making the houses energy-efficient and sustainable. Each residence enjoys a spacious private garden and its own swimming pool. The main structural frame projects outward at the entrance, serving as both a distinctive architectural feature and a practical element that provides shading and protection.",
-    "status": "Completed",
+    "status": "Permit",
     "mainImage": "/images/projects/salt-duo.jpg",
     "images": ["/images/projects/salt-duo.jpg",
+      "/images/projects/salt-duo.jpg",
+      "/images/projects/salt-duo.jpg",
        ]
   }
 

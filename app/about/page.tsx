@@ -49,7 +49,7 @@ export default function AboutPage() {
         <section className="mx-auto py-4">
           <div className="grid grid-cols-1 md:grid-cols-[1.3fr_1fr] gap-8 md:gap-12 items-start">
             <div>
-              <h2 className="font-montserrat text-2xl md:text-3xl font-medium text-neutral-900">
+              <h2 className="font-montserrat text-2xl md:text-2xl font-medium text-neutral-900">
                 Nada Noueihed
               </h2>
               <span className="block text-1xl text-neutral-600 mt-1">

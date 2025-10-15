@@ -33,7 +33,7 @@ export default function ImageSlider() {
               src={slide.mainImage}
               alt={slide.title}
               fill
-              className="object-cover"
+              className="object-fill"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-black/30"></div>
 
